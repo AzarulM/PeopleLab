@@ -16,7 +16,7 @@ public class Student extends Person
     }
     public double getGPA()
     {
-        return this.GPA;
+        return GPA;
     }
     public void setGPA(double GPA)
     {
