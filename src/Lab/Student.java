@@ -7,7 +7,7 @@ public class Student extends Person
     private int age;
 
 
-    public Student(double GPA)
+    public Student(String familyName,String firstName,int age,String school,double GPA)
     {
         super("Person", "wu");
         this.GPA = GPA;
@@ -17,13 +17,25 @@ public class Student extends Person
     }
     public double getGPA()
     {
-        return this.GPA;
+        return GPA;
+    }
+    public void setGPA(double GPA)
+    {
+        this.GPA=GPA;
     }
     public String getSchool()
     {
-        return this.school;
+        return school;
+    }
+    public void setSchool(String school)
+    {
+        this.school=school;
     }
     public int getAge()
+    {
+        return age;
+    }
+    public void setAge(int age)
     {
         return this.age;
     }
