@@ -46,10 +46,10 @@ public class Classroom {
      */
     public double classAverage(){
         double classAverage = 0;
-        for (Person student : students){
+        for (Student student : this.students){
             double totalGPA = 0;
             totalGPA += student.getGPA();
-            double classAverage = totalGPA/this.students.length;
+            classAverage = totalGPA/this.students.length;
         }
         return classAverage;
     }
