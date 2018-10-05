@@ -7,7 +7,7 @@ public class Student extends Person
     private int age;
 
 
-    public Student(double GPA)
+    public Student(String firstname, String familyname, double GPA, )
     {
         super("Person", "wu");
         this.GPA = GPA;
@@ -27,7 +27,7 @@ public class Student extends Person
     {
         return this.age;
     }
-    @Override
+
     public String toString()
     {
         return this.getFamilyName() + ", " + this.getFirstName() + ": " + this.getAge() + " enrolled in " + getSchool() + " has a " + this.getGPA() ;

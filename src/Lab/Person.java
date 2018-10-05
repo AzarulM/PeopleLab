@@ -1,6 +1,6 @@
 package Lab;
 
-public abstract class Person {
+public class Person {
     private String firstName, familyName;
 
     public Person(String firstName, String familyName) {
