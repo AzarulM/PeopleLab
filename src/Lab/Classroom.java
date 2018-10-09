@@ -40,6 +40,8 @@ public class Classroom {
     public String getSubject() {
         return this.teacher.getSubject();
     }
+        return this.teacher.getSubject();
+    }
     /**
      * The method goes through the array of students and adds their GPA to the total GPA, and then divides it by the length of the array
      * @return the average of the class
@@ -47,11 +49,9 @@ public class Classroom {
     public double classAverage(){
         double classAverage = 0;
         for (Student student : this.students){
-            double totalGPA = 0;
-            totalGPA += student.getGPA();
-            classAverage = totalGPA/this.students.length;
+            classAverage += student.getGPA();
         }
-        return classAverage;
+        return classAverage/this.students.length;
     }
 
 //    public String printClass(){
