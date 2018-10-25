@@ -7,8 +7,8 @@ public class Runner
 
     public static void main(String[] args)
     {
-        Teacher teacher = new Teacher("All of them", "Mr", "Bob", "boB");
-        Student[] students = new Student[6];
+        Teacher teacher = new Teacher("English", "Mr", "Bob", "Teacher");
+        Student[] students = new Student[36];
 
         for(int i =0; i<students.length;i++){
             students[i] = randomStudent();

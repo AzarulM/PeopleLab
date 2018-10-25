@@ -6,6 +6,7 @@ public class Classroom {
      */
     private Student[] students;
     private Teacher teacher;
+    Student[][] seatingChart = new Student[6][6];
     /**
      * Constructor
      * @param teacher sets the teacher
@@ -14,6 +15,7 @@ public class Classroom {
     public Classroom(Teacher teacher, Student[] students) {
         this.teacher = teacher;
         this.students = students;
+        fillSeats();
     }
     /**
      * The next two methods are getters
@@ -33,13 +35,28 @@ public class Classroom {
     public void setStudents(Student[] students) {
         this.students = students;
     }
+
+
+    public void fillSeats(){
+        int pos = 0;
+        for(Student[] var : seatingChart){
+            if(var ==  null){
+                break;
+            }
+            for(int i = 0; i < var.length; i++){
+                if(var[i]==null){
+                    break;
+                }
+                var[i] = students[pos];
+                pos++;
+            }
+        }
+    }
     /**
      * This method will use the teacher file and call the getSubject();
      * @return the subject of the teacher
      */
     public String getSubject() {
-        return this.teacher.getSubject();
-    }
         return this.teacher.getSubject();
     }
     /**
@@ -54,7 +71,7 @@ public class Classroom {
         return classAverage/this.students.length;
     }
 
-//    public String printClass(){
-
-  //  }
+    public String toString(){
+        return this.teacher.toString() + " teaches " + this.teacher.getSubject(); //more needs to be added here
+    }
 }
