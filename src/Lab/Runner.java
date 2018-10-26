@@ -2,8 +2,8 @@ package Lab;
 
 public class Runner
 {
-    static String[] firstName = {"bob","george","bob1","bob2","bob3","bob4"};
-    static String[] familyName = {"Folwell","wu","smith","smithy","smith2","smithy2"};
+    static String[] firstName = {"bob","george","james","david","michael","kevin"};
+    static String[] familyName = {"Folwell","wu","smith","ko","lui","james"};
 
     public static void main(String[] args)
     {
