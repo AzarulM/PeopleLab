@@ -41,6 +41,6 @@ public class Student extends Person
     @Override
     public String toString()
     {
-        return this.getFamilyName() + ", " + this.getFirstName() + ": " + this.getAge() + " enrolled in " + getSchool() + " has a " + this.getGPA() ;
+        return this.getFamilyName() + ", " + this.getFirstName() + " is  " + this.getAge() + "years old and is enrolled in " + getSchool() + " and has a " + this.getGPA() + " GPA.";
     }
 }

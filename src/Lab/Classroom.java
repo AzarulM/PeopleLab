@@ -44,7 +44,7 @@ public class Classroom {
                 break;
             }
             for(int i = 0; i < var.length; i++){
-                if(var[i]==null){
+                if(students[pos]==null){
                     break;
                 }
                 var[i] = students[pos];
@@ -72,6 +72,17 @@ public class Classroom {
     }
 
     public String toString(){
-        return this.teacher.toString() + " teaches " + this.teacher.getSubject(); //more needs to be added here
+        String result = "";
+        for(Student[] var : seatingChart){
+            if(var != null){
+                for(int i = 0; i <var.length;i++){
+                    if(var[i]!=null){
+                        result += var[i].getFirstName() + " ";
+                    }
+                }
+            }
+            result += System.lineSeparator();
+        }
+        return this.teacher.toString() + " teaches " + this.teacher.getSubject() + System.lineSeparator() + "Students in his class:" + System.lineSeparator() + result;
     }
 }
