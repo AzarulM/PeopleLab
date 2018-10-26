@@ -44,7 +44,7 @@ public class Classroom {
                 break;
             }
             for(int i = 0; i < var.length; i++){
-                if(students[pos]==null){
+                if(pos>=students.length){
                     break;
                 }
                 var[i] = students[pos];
